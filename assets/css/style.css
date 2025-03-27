@@ -1,0 +1,16 @@
+h1 {
+  text-align: center;
+}
+#tombola {
+  padding: 2rem;
+  text-align: center;
+}
+.casella {
+  text-align: center;
+  width: 10%;
+  display: inline-block;
+  border: 1px solid;
+}
+.selected {
+  background-color: red;
+}
