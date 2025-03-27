@@ -31,6 +31,20 @@ numGenration.onclick = function (e) {
   });
 };
 
+const player = document.getElementById("player");
+const card = function () {
+  for (let i = 0; i < 27; i++) {
+    const randNum = Math.ceil(Math.random() * 99);
+    const box = document.createElement("div");
+    box.classList.add("casella");
+    const h3 = document.createElement("h3");
+    h3.innerText = randNum;
+    box.appendChild(h3);
+    player.appendChild(box);
+  }
+};
+
 window.addEventListener("DOMContentLoaded", function () {
   tombolaGeneration();
+  card();
 });
